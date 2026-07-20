@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisha Species Research</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#111,#222,#000);
+    color:white;
+    text-align:center;
+}
+
+header{
+    padding:30px;
+    background:#ff1744;
+}
+
+h1{
+    font-size:40px;
+}
+
+.warning{
+    background:#ffeb3b;
+    color:black;
+    padding:12px;
+    font-weight:bold;
+}
+
+.card{
+    width:90%;
+    max-width:900px;
+    margin:20px auto;
+    background:#1e1e1e;
+    border-radius:15px;
+    padding:20px;
+}
+
+.gallery{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gallery img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    border:3px solid red;
+}
+
+video{
+    width:90%;
+    max-width:700px;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+button{
+    margin-top:20px;
+    padding:15px 30px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+#roast{
+    font-size:24px;
+    margin-top:20px;
+    color:#00ff99;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🔬 Anisha Species Research Center 🔬</h1>
+<p>Confidential Research Report</p>
+</header>
+
+<div class="warning">
+⚠ Warning: Ye page sirf mazaak ke liye hai.
+</div>
+
+<div class="card">
+
+<h2>🧬 Research Result</h2>
+
+<p>
+Scientists ne 100 saal research ke baad pata lagaya hai ki
+<strong>"Anisha"</strong> ek bahut hi unique aur rare prajati hai.
+Iski aadatein normal insaanon se thodi alag hoti hain. 😂
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📸 Secret Photos</h2>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎥 Evidence Video</h2>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<div class="card">
+
+<button onclick="roast()">Scientific Analysis</button>
+
+<p id="roast"></p>
+
+</div>
+
+<script>
+
+const jokes=[
+"Result: Ye prajati chocolate dekhte hi active ho jaati hai. 🍫",
+"Research: Iski hasi 5 kilometer door tak sunai deti hai. 😂",
+"Finding: Gussa aane par Wi-Fi bhi darr jaata hai. 📶",
+"Conclusion: Ye ekdum limited edition specimen hai. 🤣",
+"Final Report: Is prajati ko sirf pyaar aur snacks se control kiya ja sakta hai. 😎"
+];
+
+function roast(){
+document.getElementById("roast").innerHTML=
+jokes[Math.floor(Math.random()*jokes.length)];
+}
+
+</script>
+
+</body>
+</html>
